@@ -59,7 +59,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="bg-white shadow p-4 rounded max-w-2xl">
+    <div className="bg-white shadow p-4 rounded max-w-xl">
       <h1 className="mb-4 font-bold text-2xl text-center">
         Management Dashboard
       </h1>
