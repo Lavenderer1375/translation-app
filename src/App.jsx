@@ -8,7 +8,7 @@ function App() {
 
   return (
     <TranslationProvider>
-      <div className="flex flex-col justify-center items-center bg-gray-100 p-4 min-h-screen">
+      <div className="flex flex-col justify-center items-center bg-gray-100 p-4 border-4 border-red-500 min-h-screen">
         <div className="flex justify-center mb-4">
           <button onClick={() => setView("public")} className="mx-2 btn">
             Public View

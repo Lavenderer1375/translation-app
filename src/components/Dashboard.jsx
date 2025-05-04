@@ -59,7 +59,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="bg-white shadow p-4 rounded max-w-xl">
+    <div className="bg-white shadow mx-auto p-4 rounded w-full max-w-lg">
       <h1 className="mb-4 font-bold text-2xl text-center">
         Management Dashboard
       </h1>
@@ -67,24 +67,24 @@ const Dashboard = () => {
       {/* Add New Keyword */}
       <div className="mb-6">
         <h2 className="mb-2 font-semibold text-lg">Add New Keyword</h2>
-        <div className="flex gap-2 mb-2">
+        <div className="flex sm:flex-row flex-col gap-2 mb-2">
           <input
             type="text"
             placeholder="Keyword"
             value={newKeyword}
             onChange={(e) => setNewKeyword(e.target.value)}
-            className="flex-1 p-2 border rounded"
+            className="p-2 border rounded w-full"
           />
           <input
             type="text"
             placeholder={`Translation (${data.selectedLanguage})`}
             value={newTranslation}
             onChange={(e) => setNewTranslation(e.target.value)}
-            className="flex-1 p-2 border rounded"
+            className="p-2 border rounded w-full"
           />
           <button
             onClick={handleAdd}
-            className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded text-white transition"
+            className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded w-full sm:w-auto text-white transition"
           >
             Add
           </button>
@@ -115,8 +115,8 @@ const Dashboard = () => {
               }
             />
             <button
-              onClick={handleDelete.bind(null, index)}
-              className="flex bg-red-600 hover:bg-red-700 mt-2 p-2 rounded text-white transition"
+              onClick={() => handleDelete(index)}
+              className="bg-red-600 hover:bg-red-700 mt-2 p-2 rounded w-full text-white transition"
             >
               Delete
             </button>
