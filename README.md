@@ -20,6 +20,7 @@ A simple React application that allows users to manage and view translations for
 ## 🏗️ Data Structure & Implementation Logic
 
 Each keyword is stored as an object with a `key` and a `translations` dictionary:
+
 ```js
 {
   key: "hello",
@@ -56,7 +57,7 @@ Filter/search keywords
 
 📦 Installation
 Clone the repo
-git clone https://github.com/your-repo/translation-app.git
+git clone https://github.com/Lavenderer1375/translation-app
 
 Install dependencies
 npm install
@@ -64,3 +65,4 @@ npm install
 Start the development server
 npm run dev
 
+```
